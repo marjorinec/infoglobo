@@ -1,8 +1,23 @@
 .header {
   text-align: center;
   background-color: #004861;
+  width: 1024px;
+  height: 100px;
+}
+
+.burger-button {
+  position: absolute;
+  left: 32px;
+  top: 40px;
+  width: 24px;
+  height: 20px;
+}
+
+
+#header-img {
+  height: 48px;
 }
 
 #header-title {
-  color: #ffffff;
+  margin-top: 20px;
 }
