@@ -14,6 +14,7 @@ function App() {
                 <Col className="first-news" lg={6} md={6}>
                   <div className="news-img-overlay"></div>
                   <img alt="news" className="news-img" src="./news-imgs/464x261-1.jpeg" />
+                  <img alt="share" className="share-icon" src="./icons/share.png" />
                   <div className="news-info">
                     <div className="news-category">
                       BRASIL
@@ -29,6 +30,7 @@ function App() {
                 <Col className="first-news" lg={6} md={6}>
                   <div className="news-img-overlay"></div>
                   <img alt="news" className="news-img" src="./news-imgs/464x261-2.jpeg" />
+                  <img alt="share" className="share-icon" src="./icons/share.png" />
                   <div className="news-info">
                     <div className="news-category">
                       MODA

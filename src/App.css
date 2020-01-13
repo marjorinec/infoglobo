@@ -2,7 +2,7 @@
   margin-top: 30px;
 }
 
-.first-news img {
+.first-news .news-img {
   width: 100%;
 }
 
@@ -20,6 +20,13 @@
   margin-left: 15px;
 }
 
+.share-icon {
+  position: absolute;
+  left: 510px;
+  top: 15px;
+  width: 24px;
+  height: 20px;
+}
 
 .news-info {
   font-family: "Arial";
