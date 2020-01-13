@@ -1,0 +1,38 @@
+.first-news {
+  margin-top: 30px;
+}
+
+.first-news img {
+  width: 100%;
+}
+
+.news-info {
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 200px;
+  left: 40px;
+  margin-right: 30px;
+}
+
+.news-category {
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.news-title {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.news-description {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  
+}
