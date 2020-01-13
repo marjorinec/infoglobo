@@ -20,6 +20,13 @@
   margin-left: 15px;
 }
 
+.news-img-overlay:hover {
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgb(3, 3, 3, 1), rgb(7, 6, 6, 0.8));
+  opacity: 0.6;
+  height: 100%;
+  cursor: pointer;
+}
+
 .share-icon {
   position: absolute;
   left: 510px;
