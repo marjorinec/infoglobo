@@ -12,7 +12,8 @@ function App() {
             <section>
               <Row>
                 <Col className="first-news" lg={6} md={6}>
-                  <img src="./news-imgs/464x261-1.jpeg" />
+                  <div className="news-img-overlay"></div>
+                  <img className="news-img" src="./news-imgs/464x261-1.jpeg" />
                   <div className="news-info">
                     <div className="news-category">
                       BRASIL
@@ -26,7 +27,8 @@ function App() {
                   </div>
                 </Col>
                 <Col className="first-news" lg={6} md={6}>
-                  <img src="./news-imgs/464x261-2.jpeg" />
+                  <div className="news-img-overlay"></div>
+                  <img className="news-img" src="./news-imgs/464x261-2.jpeg" />
                   <div className="news-info">
                     <div className="news-category">
                       MODA

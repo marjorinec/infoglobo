@@ -6,6 +6,21 @@
   width: 100%;
 }
 
+.news-img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.6;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(1, 1, 1, 1), rgba(255, 255, 255, 0));
+  overflow: hidden;
+  height: 300px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+
 .news-info {
   font-family: "Arial";
   color: rgb(255, 255, 255);
@@ -33,6 +48,5 @@
 .news-description {
   font-size: 14px;
   line-height: 1.5;
-  text-align: left;
-  
+  text-align: left; 
 }
