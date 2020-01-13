@@ -1,23 +1,51 @@
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+@media screen and (min-width:320px)  {
+  .burger-button {
+    position: absolute;
+    left: 30px;
+    top: 18px;
+    width: 16px;
+    height: 15px;
+  }
+ 
+  #header-img {
+    height: 16px;
+    margin-bottom: 8px;
+  }
+
+  .header {
+    width: 320px;
+    height: 50px;
+  }
+  
+}
+
+/* lo-res laptops and desktops, tablet and landscape iPad */
+@media screen and (min-width:801px)  {
+  .burger-button {
+    position: absolute;
+    left: 32px;
+    top: 40px;
+    width: 24px;
+    height: 20px;
+  }
+
+  #header-img {
+    height: 48px;
+    margin-top: 28px;
+  }
+
+  .header {
+    width: 1024px;
+    height: 100px;
+  }
+}
+
+
 .header {
   text-align: center;
   background-color: #004861;
-  width: 1024px;
-  height: 100px;
-}
-
-.burger-button {
-  position: absolute;
-  left: 32px;
-  top: 40px;
-  width: 24px;
-  height: 20px;
 }
 
 
-#header-img {
-  height: 48px;
-}
 
-#header-title {
-  margin-top: 20px;
-}
