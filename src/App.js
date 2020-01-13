@@ -27,6 +27,17 @@ function App() {
                 </Col>
                 <Col className="first-news" lg={6} md={6}>
                   <img src="./news-imgs/464x261-2.jpeg" />
+                  <div className="news-info">
+                    <div className="news-category">
+                      MODA
+                    </div>
+                    <h5 className="news-title">
+                      Aenean quis risus vel nulla maximus
+                    </h5>
+                    <div className="news-description">
+                    Quisque aliquet euismod justo, sit amet sodales eros sagittis u ddfsfsd sfddsdf sdfsdf sdfsdfsd sdfsdfsd fsdfsdfd fdfdsf fdf dfd
+                    </div>
+                  </div>
                 </Col>
               </Row>
             </section>
