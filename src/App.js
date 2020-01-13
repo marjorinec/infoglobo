@@ -13,7 +13,7 @@ function App() {
               <Row>
                 <Col className="first-news" lg={6} md={6}>
                   <div className="news-img-overlay"></div>
-                  <img className="news-img" src="./news-imgs/464x261-1.jpeg" />
+                  <img alt="news" className="news-img" src="./news-imgs/464x261-1.jpeg" />
                   <div className="news-info">
                     <div className="news-category">
                       BRASIL
@@ -28,7 +28,7 @@ function App() {
                 </Col>
                 <Col className="first-news" lg={6} md={6}>
                   <div className="news-img-overlay"></div>
-                  <img className="news-img" src="./news-imgs/464x261-2.jpeg" />
+                  <img alt="news" className="news-img" src="./news-imgs/464x261-2.jpeg" />
                   <div className="news-info">
                     <div className="news-category">
                       MODA
