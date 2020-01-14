@@ -30,12 +30,12 @@ class MidNews extends React.Component {
             </Col>
             <Col lg={6} md={6} className="news">
               <div className="mid-news-category text-uppercase">
-                {this.props.newsInfo.category}
+                {this.props.newsInfo.label}
               </div>
               <h5 className="mid-news-title">
               {this.props.newsInfo.title}
               </h5>
-              <div className=" mid-description">
+              <div className="mid-description">
               {this.props.newsInfo.description}
               </div>
               <img alt="share" className="black-share-icon" src="./icons/black-share.png"></img>

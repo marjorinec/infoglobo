@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './components/Header'
 import BigNews from './components/BigNews'
 import MidNews from './components/MidNews'
+import SmallNews from './components/SmallNews'
 import { Container, Row } from 'react-bootstrap'
 import axios from 'axios'
 
@@ -51,8 +52,22 @@ class App extends React.Component {
               <MidNews
                 newsInfo={this.state.mainData[3]}
               />
+            </Row>
 
-          </Row>
+            <Row>
+              <SmallNews
+                newsInfo={this.state.mainData[4]}
+              />
+              <SmallNews
+                newsInfo={this.state.mainData[5]}
+              />
+              <SmallNews
+                newsInfo={this.state.mainData[6]}
+              />
+              <SmallNews
+                newsInfo={this.state.mainData[7]}
+              />
+            </Row>
           </Container>
         </article>
       </section>
