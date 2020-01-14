@@ -26,7 +26,9 @@ class MidNews extends React.Component {
         <Col>
           <Row>
             <Col lg={6} md={6} className="news">
+            <a href={this.props.newsInfo.url}>
               <img alt="news" className="news-img" src={this.state.image}></img>
+            </a>
             </Col>
             <Col lg={6} md={6} className="news">
               <a href={this.props.newsInfo.url}>
@@ -40,7 +42,9 @@ class MidNews extends React.Component {
                 {this.props.newsInfo.description}
                 </div>
               </a>
-              <img alt="share" className="black-share-icon" src="./icons/black-share.png"></img>
+              <a href="#">
+                <img alt="share" className="black-share-icon" src="./icons/black-share.png"></img>
+              </a>
             </Col>
           </Row>
         </Col>

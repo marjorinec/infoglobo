@@ -27,7 +27,9 @@ class BigNews extends React.Component {
           <a href={this.props.newsInfo.url}>
             <div className="news-img-overlay"></div>
             <img alt="news" className="news-img" src={this.state.image} />
-            <img alt="share" className="share-icon" src="./icons/share.png" />
+            <a href="#">
+              <img alt="share" className="share-icon" src="./icons/share.png" />
+            </a>
             <div className="news-info">
               <div className="news-category text-uppercase">
                 {this.props.newsInfo.label}
