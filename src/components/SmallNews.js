@@ -10,7 +10,7 @@ class SmallNews extends React.Component {
 
   render() {
     return (
-      <Col className="news" lg={3} md={3}>
+      <Col className="news small-news-row" lg={3} md={3}>
         <img className="news-img" src={`./news-imgs/${this.props.newsInfo.image}`}></img>
         <div className="mid-news-category small-news-label text-uppercase">
           {this.props.newsInfo.label}
