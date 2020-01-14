@@ -29,15 +29,17 @@ class MidNews extends React.Component {
               <img alt="news" className="news-img" src={this.state.image}></img>
             </Col>
             <Col lg={6} md={6} className="news">
-              <div className="mid-news-category text-uppercase">
-                {this.props.newsInfo.label}
-              </div>
-              <h5 className="mid-news-title">
-              {this.props.newsInfo.title}
-              </h5>
-              <div className="mid-description">
-              {this.props.newsInfo.description}
-              </div>
+              <a href={this.props.newsInfo.url}>
+                <div className="mid-news-category text-uppercase">
+                  {this.props.newsInfo.label}
+                </div>
+                <h5 className="mid-news-title">
+                {this.props.newsInfo.title}
+                </h5>
+                <div className="mid-description">
+                {this.props.newsInfo.description}
+                </div>
+              </a>
               <img alt="share" className="black-share-icon" src="./icons/black-share.png"></img>
             </Col>
           </Row>

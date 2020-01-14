@@ -1,3 +1,10 @@
 body {
   font-family: "Arial";
 }
+
+a {
+  &, &:link, &:hover {
+    color: inherit;
+    // text-decoration: inherit;
+  }
+}
