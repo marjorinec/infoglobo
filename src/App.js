@@ -19,6 +19,20 @@ function App() {
     img: "./news-imgs/464x261-2.jpeg"
   }
 
+  const newsThree = {
+    category: "Comportamento",
+    title: "Suspendisse dapibus turpis enim, ac commodo odio porta at",
+    description: "Nullam ac turpis tellus. Morbi tincidunt nulla in massa condime dçskh kdç hfkçjdk jhhj ss sghshg dghhd sgsgs",
+    img: "./news-imgs/216x216-1.jpeg"
+  }
+
+  const newsFour = {
+    category: "Estilo",
+    title: "Ut eleifend bibendum eros vitae volutpat odio porta",
+    description: "Integer suscipit tellus ut elit mollis vehicula. Nullam arcu la dçskh kdç hfkçjdk jhhj ss sghshg dghhd sgsgs",
+    img: "./news-imgs/216x216-2.jpeg"
+  }
+
   return (
     <section className="App">
       <Header />
@@ -33,11 +47,10 @@ function App() {
             />
 
             <MidNews
-              // newsInfo={newsTwo}
+              newsInfo={newsThree}
             />
-
             <MidNews
-              // newsInfo={newsTwo}
+              newsInfo={newsFour}
             />
 
         </Row>
