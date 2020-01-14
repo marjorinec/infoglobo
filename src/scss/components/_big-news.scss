@@ -1,11 +1,3 @@
-.news {
-  margin-top: 30px;
-}
-
-.news-img {
-  width: 100%;
-}
-
 .news-img-overlay {
   position: absolute;
   top: 0;
@@ -15,7 +7,6 @@
   opacity: 0.6;
   background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(1, 1, 1, 0.7), rgba(255, 255, 255, 0));
   overflow: hidden;
-  height: 300px;
   margin-right: 15px;
   margin-left: 15px;
 }
@@ -23,16 +14,15 @@
 .news-img-overlay:hover {
   background: linear-gradient(to top, rgba(0, 0, 0, 1), rgb(3, 3, 3, 0.7), rgb(7, 6, 6, 0.8));
   opacity: 0.6;
-  height: 100%;
   cursor: pointer;
 }
 
 .share-icon {
   position: absolute;
-  left: 510px;
-  top: 15px;
   width: 24px;
   height: 20px;
+  left: 510px;
+  top: 15px;
 }
 
 .news-info {

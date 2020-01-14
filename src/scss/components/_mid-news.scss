@@ -14,19 +14,21 @@
   font-weight: bold;
   line-height: 1.111;
   text-align: left;
+  margin-top: 3px;
 }
 
 .mid-news-description {
-    font-size: 14px;
-    font-family: "Arial";
-    color: rgb(9, 9, 9);
-    line-height: 1.429;
-    text-align: left;
+  font-size: 14px;
+  font-family: "Arial";
+  color: rgb(9, 9, 9);
+  line-height: 1.429;
+  text-align: left;
 }
 
 .black-share-icon {
   position: absolute;
+  width: 24px;
+  height: 20px;
   left: 15px;
   top: 235px;
-  width: 24px;
 }

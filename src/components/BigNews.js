@@ -1,6 +1,5 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
-import './big-news.css'
 
 class BigNews extends React.Component {
   constructor(props) {

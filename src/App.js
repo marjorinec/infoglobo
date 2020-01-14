@@ -1,9 +1,7 @@
 import React from 'react'
-import Header from './components/header'
+import Header from './components/Header'
 import BigNews from './components/BigNews'
 import { Container, Row, Col } from 'react-bootstrap'
-import './App.css'
-import './components/big-news.css'
 
 function App() {
   const newsOne = {
@@ -45,7 +43,7 @@ function App() {
                 <h5 className="mid-news-title">
                   Suspendisse dapibus turpis enim, ac commodo odio porta at
                 </h5>
-                <div className="mid-news-description">
+                <div className=" mid-description">
                   Nullam ac turpis tellus. Morbi tincidunt nulla in massa condime dçskh kdç hfkçjdk jhhj ss sghshg dghhd sgsgs
                 </div>
                 <img alt="share" className="black-share-icon" src="./icons/black-share.png"></img>
@@ -64,7 +62,7 @@ function App() {
                 <h5 className="mid-news-title">
                   Ut eleifend bibendum eros vitae volutpat odio porta
                 </h5>
-                <div className="mid-news-description">
+                <div className="mid-description">
                   Integer suscipit tellus ut elit mollis vehicula. Nullam arcu la dçskh kdç hfkçjdk jhhj ss sghshg dghhd sgsgs
                 </div>
                 <img alt="share" className="black-share-icon" src="./icons/black-share.png"></img>
