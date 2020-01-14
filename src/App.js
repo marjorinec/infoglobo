@@ -3,6 +3,7 @@ import Header from './components/Header'
 import BigNews from './components/BigNews'
 import MidNews from './components/MidNews'
 import SmallNews from './components/SmallNews'
+import Propaganda from './components/Propaganda'
 import { Container, Row } from 'react-bootstrap'
 import axios from 'axios'
 
@@ -69,6 +70,8 @@ class App extends React.Component {
               />
             </Row>
           </Container>
+
+          <Propaganda/>
         </article>
       </section>
       )
