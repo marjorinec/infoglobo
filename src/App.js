@@ -26,16 +26,10 @@ function App() {
         <Container>
           <Row>
             <BigNews
-              category={newsOne.category}
-              title={newsOne.title}
-              description={newsOne.description}
-              img={newsOne.img}
+              newsInfo={newsOne}
             />
             <BigNews
-              category={newsTwo.category}
-              title={newsTwo.title}
-              description={newsTwo.description}
-              img={newsTwo.img}
+              newsInfo={newsTwo}
             />
           </Row>
         </Container>
