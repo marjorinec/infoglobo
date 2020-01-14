@@ -4,7 +4,8 @@ import BigNews from './components/BigNews'
 import MidNews from './components/MidNews'
 import SmallNews from './components/SmallNews'
 import Propaganda from './components/Propaganda'
-import { Container, Row, Col } from 'react-bootstrap'
+import SectionNews from './components/SectionNews'
+import { Container, Row } from 'react-bootstrap'
 import axios from 'axios'
 
 class App extends React.Component {
@@ -23,7 +24,7 @@ class App extends React.Component {
       mainData: infogloboData.data.section[0],
       brazilData: infogloboData.data.section[1],
       worldData: infogloboData.data.section[2]
-    }, () => console.log(this.state.brazilData))
+    })
   }
 
   componentDidMount() {
@@ -74,47 +75,17 @@ class App extends React.Component {
           <Propaganda/>
 
           <Container>
-            <Row className="news">
-              <Col className="section-title text-uppercase">
-                {this.state.brazilData.name}
-              </Col>
-            </Row>
-            <Row className="section-news">
-              <SmallNews
-                newsInfo={this.state.brazilData.data[0]}
-              />
-              <SmallNews
-                newsInfo={this.state.brazilData.data[1]}
-              />
-              <SmallNews
-                newsInfo={this.state.brazilData.data[2]}
-              />
-              <SmallNews
-                newsInfo={this.state.brazilData.data[3]}
+            <Row>
+              <SectionNews
+                newsInfo={this.state.brazilData}
               />
             </Row>
-
-            <Row className="news">
-              <Col className="section-title text-uppercase">
-                {this.state.worldData.name}
-              </Col>
-            </Row>
-            <Row className="section-news">
-              <SmallNews
-                newsInfo={this.state.worldData.data[0]}
-              />
-              <SmallNews
-                newsInfo={this.state.worldData.data[1]}
-              />
-              <SmallNews
-                newsInfo={this.state.worldData.data[2]}
-              />
-              <SmallNews
-                newsInfo={this.state.worldData.data[3]}
+            <Row>
+              <SectionNews
+                newsInfo={this.state.worldData}
               />
             </Row>
           </Container>
-
         </article>
       </section>
       )
