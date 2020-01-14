@@ -1,0 +1,32 @@
+.mid-news-category {
+  font-size: 10px;
+  font-family: "Arial";
+  color: rgb(0, 72, 97);
+  font-weight: bold;
+  line-height: 2.1;
+  text-align: left;
+}
+
+.mid-news-title {
+  font-size: 18px;
+  font-family: "Arial";
+  color: rgb(9, 9, 9);
+  font-weight: bold;
+  line-height: 1.111;
+  text-align: left;
+}
+
+.mid-news-description {
+    font-size: 14px;
+    font-family: "Arial";
+    color: rgb(9, 9, 9);
+    line-height: 1.429;
+    text-align: left;
+}
+
+.black-share-icon {
+  position: absolute;
+  left: 15px;
+  top: 235px;
+  width: 24px;
+}
