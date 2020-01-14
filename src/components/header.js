@@ -11,8 +11,7 @@ const Header = () => (
         </h1>
       </Col>
     </Row>
-  </header>    
-
+  </header>
 )
 
 export default Header

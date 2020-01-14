@@ -5,7 +5,8 @@ import MidNews from './components/MidNews'
 import SmallNews from './components/SmallNews'
 import Propaganda from './components/Propaganda'
 import SectionNews from './components/SectionNews'
-import { Container, Row } from 'react-bootstrap'
+import Footer from './components/Footer'
+import { Container, Row, Col } from 'react-bootstrap'
 import axios from 'axios'
 
 class App extends React.Component {
@@ -86,6 +87,9 @@ class App extends React.Component {
               />
             </Row>
           </Container>
+
+          <Footer />
+
         </article>
       </section>
       )
