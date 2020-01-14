@@ -3,62 +3,62 @@ import Header from './components/Header'
 import BigNews from './components/BigNews'
 import MidNews from './components/MidNews'
 import { Container, Row } from 'react-bootstrap'
+import axios from 'axios'
 
-function App() {
-  const newsOne = {
-    category: "Brasil",
-    title: "Nullam arcu lacus, tincidunt vel efficitur",
-    description: "Vivamus vitae mauris eget enim gravida eleifend. Nunc et diam ddfsfsd sfdf sdfsdf sdfsdfsd sdfsdfsd fsdfsdfd fdfdsf fdf dfd",
-    img: "./news-imgs/464x261-1.jpeg"
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    
+    this.state = {
+      mainData: null
+    }
   }
 
-  const newsTwo = {
-    category: "Moda",
-    title: "Aenean quis risus vel nulla maximus",
-    description: "Quisque aliquet euismod justo, sit amet sodales eros sagittis u ddfsfsd sfddsdf sdfsdf sdfsdfsd sdfsdfsd fsdfsdfd fdfdsf fdf dfd",
-    img: "./news-imgs/464x261-2.jpeg"
+  async getInfogloboData() {
+    const infogloboData = await axios.get('/data.json')
+
+    this.setState({
+      mainData: infogloboData.data.section[0].data,
+      brazilData: infogloboData.data.section[1].data,
+      worldData: infogloboData.data.section[2].data
+    })
   }
 
-  const newsThree = {
-    category: "Comportamento",
-    title: "Suspendisse dapibus turpis enim, ac commodo odio porta at",
-    description: "Nullam ac turpis tellus. Morbi tincidunt nulla in massa condime dçskh kdç hfkçjdk jhhj ss sghshg dghhd sgsgs",
-    img: "./news-imgs/216x216-1.jpeg"
+  componentDidMount() {
+    this.getInfogloboData()
   }
 
-  const newsFour = {
-    category: "Estilo",
-    title: "Ut eleifend bibendum eros vitae volutpat odio porta",
-    description: "Integer suscipit tellus ut elit mollis vehicula. Nullam arcu la dçskh kdç hfkçjdk jhhj ss sghshg dghhd sgsgs",
-    img: "./news-imgs/216x216-2.jpeg"
+  render() {
+    if (this.state.mainData === null) {
+      return (<div>Carregando todo</div>)
+    } else {
+      return (
+        <section className="App">
+        <Header />
+        <article>
+          <Container>
+            <Row>
+              <BigNews
+                newsInfo={this.state.mainData[0]}
+              />
+              <BigNews
+                newsInfo={this.state.mainData[1]}
+              />
+
+              <MidNews
+                newsInfo={this.state.mainData[2]}
+              />
+              <MidNews
+                newsInfo={this.state.mainData[3]}
+              />
+
+          </Row>
+          </Container>
+        </article>
+      </section>
+      )
+    }
   }
-
-  return (
-    <section className="App">
-      <Header />
-      <article>
-        <Container>
-          <Row>
-            <BigNews
-              newsInfo={newsOne}
-            />
-            <BigNews
-              newsInfo={newsTwo}
-            />
-
-            <MidNews
-              newsInfo={newsThree}
-            />
-            <MidNews
-              newsInfo={newsFour}
-            />
-
-        </Row>
-
-        </Container>
-      </article>
-    </section>
-  ); 
 }
 
 export default App
