@@ -1,4 +1,7 @@
 import React from 'react'
+import { Container, Row } from 'react-bootstrap'
+import axios from 'axios'
+import { Spinner } from 'react-bootstrap'
 import Header from './components/Header'
 import BigNews from './components/BigNews'
 import MidNews from './components/MidNews'
@@ -6,8 +9,7 @@ import SmallNews from './components/SmallNews'
 import Propaganda from './components/Propaganda'
 import SectionNews from './components/SectionNews'
 import Footer from './components/Footer'
-import { Container, Row, Col } from 'react-bootstrap'
-import axios from 'axios'
+import Loader from './components/Loader'
 
 class App extends React.Component {
   constructor(props) {
@@ -34,7 +36,7 @@ class App extends React.Component {
 
   render() {
     if (this.state.mainData === null) {
-      return (<div>Carregando todo</div>)
+      return <Spinner animation="border" />
     } else {
       return (
         <section className="App">
@@ -42,34 +44,54 @@ class App extends React.Component {
         <article>
           <Container>
             <Row>
-              <BigNews
-                newsInfo={this.state.mainData.data[0]}
-              />
-              <BigNews
-                newsInfo={this.state.mainData.data[1]}
-              />
+              <Loader ready={this.state.mainData}>
+                <BigNews
+                  newsInfo={this.state.mainData.data[0]}
+                />
+              </Loader>
+              
+              <Loader ready={this.state.mainData}>
+                <BigNews
+                  newsInfo={this.state.mainData.data[1]}
+                />
+              </Loader>
 
-              <MidNews
-                newsInfo={this.state.mainData.data[2]}
-              />
-              <MidNews
-                newsInfo={this.state.mainData.data[3]}
-              />
+              <Loader ready={this.state.mainData}>
+                <MidNews
+                  newsInfo={this.state.mainData.data[2]}
+                />
+              </Loader>
+              <Loader ready={this.state.mainData}>
+                <MidNews
+                  newsInfo={this.state.mainData.data[3]}
+                />
+              </Loader>
             </Row>
 
             <Row>
-              <SmallNews
-                newsInfo={this.state.mainData.data[4]}
-              />
-              <SmallNews
-                newsInfo={this.state.mainData.data[5]}
-              />
-              <SmallNews
-                newsInfo={this.state.mainData.data[6]}
-              />
-              <SmallNews
-                newsInfo={this.state.mainData.data[7]}
-              />
+              <Loader ready={this.state.mainData}>
+                <SmallNews
+                  newsInfo={this.state.mainData.data[4]}
+                />
+              </Loader>
+
+              <Loader ready={this.state.mainData}>
+                <SmallNews
+                  newsInfo={this.state.mainData.data[5]}
+                />
+              </Loader>
+              
+              <Loader ready={this.state.mainData}>
+                <SmallNews
+                  newsInfo={this.state.mainData.data[6]}
+                />
+              </Loader>
+
+              <Loader ready={this.state.mainData}>
+                <SmallNews
+                  newsInfo={this.state.mainData.data[7]}
+                />
+              </Loader>
             </Row>
           </Container>
 
@@ -77,14 +99,18 @@ class App extends React.Component {
 
           <Container>
             <Row>
-              <SectionNews
-                newsInfo={this.state.brazilData}
-              />
+              <Loader ready={this.state.brazilData}>
+                <SectionNews
+                  newsInfo={this.state.brazilData}
+                />
+              </Loader>
             </Row>
             <Row>
-              <SectionNews
-                newsInfo={this.state.worldData}
-              />
+              <Loader ready={this.state.worldData}>
+                <SectionNews
+                  newsInfo={this.state.worldData}
+                />
+              </Loader>
             </Row>
           </Container>
 
