@@ -1,5 +1,7 @@
 .small-news-row {
-  height: 300px;
+  @media screen and (min-width: 540px) {
+    height: 300px;
+  }
 }
 
 .small-news-label {

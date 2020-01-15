@@ -1,13 +1,12 @@
-import React from 'react'
-import { Spinner } from 'react-bootstrap'
+import React from "react";
+import { Spinner } from "react-bootstrap";
 
 function Loader(props) {
   if (!props.ready) {
-    return <Spinner animation="border" />
+    return <Spinner animation="border" />;
   } else {
-    return props.children
-  }  
+    return props.children;
+  }
 }
 
-export default Loader
-
+export default Loader;

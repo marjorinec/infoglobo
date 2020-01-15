@@ -1,18 +1,24 @@
-/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
-@media screen and (min-width:320px)  { 
-  #footer-img {
-    height: 16px;
-    margin-bottom: 8px;
-  }
+#footer-title,
+#copyright-content {
+  text-align: center;
+}
 
-  .footer {
-    width: 320px;
-    height: 50px;
+@media screen and (max-width: 540px) {
+  .col-12 {
+    padding: 1rem;
+  }
+  #footer-img {
+    height: 26px;
+  }
+  #copyright-content {
+    font-size: 12px;
+    background-color: #004861;
+    color: white;
   }
 }
 
 /* lo-res laptops and desktops, tablet and landscape iPad */
-@media screen and (min-width:801px)  {
+@media screen and (min-width: 540px) {
   .footer {
     width: 100%;
     height: 81px;
@@ -41,5 +47,5 @@
 }
 
 .footer {
-  background-color: #D5E11F;
+  background-color: #d5e11f;
 }
