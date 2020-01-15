@@ -7,7 +7,7 @@ const Header = () => (
       <Col className="header" xs={12} md={12} lg={12}>
         <img alt="burger-menu" className="burger-button" src="./icons/burger-icon.png"/>
         <h1 id="header-title">
-          <img alt="infoglobo-logo" id="header-img" src="./infoglobo-logo.png"/>
+          <img alt="infoglobo-logo" id="header-img" src="./logos/infoglobo-logo.png"/>
         </h1>
       </Col>
     </Row>

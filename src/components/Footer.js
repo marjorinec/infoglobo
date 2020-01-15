@@ -10,7 +10,7 @@ const Footer = () => (
             <img
               alt="infoglobo-logo"
               id="footer-img"
-              src="./footer-logo.png"
+              src="./logos/footer-logo.png"
             />
           </h1>
         </Col>
@@ -20,7 +20,6 @@ const Footer = () => (
           <div>TODOS OS DIREITOS RESERVADOS</div>
         </Col>
       </Row>
-
     </Container>
   </footer>
 )
